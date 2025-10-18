@@ -15,6 +15,7 @@ Para levantar el entorno, se utilizan dos contenedores: uno para la base de dato
 ### 1. Iniciar Contenedor PostgreSQL
 ```bash
 docker run --name postgres-servilimar -e POSTGRES_USER=ulimar -e POSTGRES_PASSWORD=ex4men_db -p 5432:5432 -d postgres:14
-
+```
 ### 2. Iniciar Contenedor pgAdmin
+```bash
 docker run --name pgadmin-servilimar -p 80:80 -e 'PGADMIN_DEFAULT_EMAIL=usuario@servilimar.com' -e 'PGADMIN_DEFAULT_PASSWORD=limar#123' -d dpage/pgadmin4
